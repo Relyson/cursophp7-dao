@@ -18,20 +18,22 @@ require_once("config.php");
 //Carrega um usuário usando o login e a senha
 //$usuario = new Usuario();
 //$usuario->login("user", "12345");
-
 //echo $usuario;
 
 //Criando um novo usuário
 //$aluno = new Usuario("aluno", "@lun0");
 //$aluno->insert();
-
 //echo $aluno;
 
+//Alterar um usuario
+//$usuario = new Usuario();
+//$usuario->loadbyId(9);
+//$usuario->update("professor", "!@#$%¨&*");
+//echo $usuario;
+
 $usuario = new Usuario();
-
-$usuario->loadbyId(9);
-
-$usuario->update("professor", "!@#$%¨&*");
+$usuario->loadbyId(6);
+$usuario->delete();
 
 echo $usuario;
 
